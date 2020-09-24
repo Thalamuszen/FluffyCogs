@@ -223,7 +223,7 @@ class InVoice(commands.Cog):
         if not self.guild_cache[guild.id]["dynamic"]:
             return
         guild_role = self.guild_cache[guild.id]["role"]
-        name = "🔊 " + vc.name
+        name = "☕「ᴛʜᴇ-ʟᴏᴜɴɢᴇ」☕"
         role = await guild.create_role(name=name, reason="Dynamic role for {vc}".format(vc=vc))
         await self.config.channel(vc).role.set(role.id)
         self.channel_cache[vc.id]["role"] = role.id
