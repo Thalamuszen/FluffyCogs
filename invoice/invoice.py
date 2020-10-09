@@ -253,9 +253,10 @@ class InVoice(commands.Cog):
         self.channel_cache[vc.id]["channel"] = text.id
         channel = guild.get_channel(int(text.id))
         frens = discord.utils.get(guild.roles, id=751799486514462750)
-        await channel.send(
-                "Henlo {} \nRun `!command` blah".format(frens.mention)
-            )
+        embed = discord.Embed(title="Tile", description="Desc", color=0x00ff00)
+        embed.add_field(name="Fiel1", value="hi", inline=False)
+        embed.add_field(name="Field2", value="hi2", inline=False)
+        await channel.send(embed=embed)
 
     @commands.Cog.listener()
     async def on_guild_channel_delete(self, vc):
