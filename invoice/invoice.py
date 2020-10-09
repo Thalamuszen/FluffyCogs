@@ -254,6 +254,10 @@ class InVoice(commands.Cog):
         channel = guild.get_channel(int(text.id))
         await channel.send(
                 "Henlo <@&751799486514462750>,\nRun `!command` blah"
+                "Henlo <@&751799486514462750>,\nRun `!command` blah"
+                "Henlo <@&751799486514462750>,\nRun `!command` blah"
+                "Henlo <@&751799486514462750>,\nRun `!command` blah"
+                "Henlo <@&751799486514462750>,\nRun `!command` blah"
             )
 
     @commands.Cog.listener()
