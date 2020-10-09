@@ -216,7 +216,7 @@ class InVoice(commands.Cog):
             )
 
     @commands.Cog.listener()
-    async def on_guild_channel_create(self, ctx, vc):
+    async def on_guild_channel_create(self, vc):
         if not isinstance(vc, discord.VoiceChannel):
             return
         guild = vc.guild
@@ -251,7 +251,6 @@ class InVoice(commands.Cog):
         )
         await self.config.channel(vc).channel.set(text.id)
         self.channel_cache[vc.id]["channel"] = text.id
-        await ctx.send('hello')
 
     @commands.Cog.listener()
     async def on_guild_channel_delete(self, vc):
