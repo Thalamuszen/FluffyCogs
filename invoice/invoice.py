@@ -263,7 +263,7 @@ class InVoice(commands.Cog):
         embed1.add_field(name="`DJ pause`", value="Pauses the currently playing track.", inline=True)
         embed1.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
         embed1.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
-        await channel.send(embed1=embed1)
+        await channel.send(embed=embed1)
         embed2 = discord.Embed(title="__**Voice Chat Commands**__", description="Commands blah blah blah\n\n**DJ Lucio**", color=0x4FE0E0)
         embed2.set_thumbnail(url="https://cdn.discordapp.com/avatars/751844552670969866/9f035363fa69e094c61c9a33e24d4382.png?size=1024")
         embed2.set_author(name="Elune", icon_url="https://cdn.discordapp.com/avatars/751844552670969866/9f035363fa69e094c61c9a33e24d4382.png")
@@ -274,7 +274,7 @@ class InVoice(commands.Cog):
         embed2.add_field(name="`DJ pause`", value="Pauses the currently playing track.", inline=True)
         embed2.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
         embed2.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
-        await channel.send(embed2=embed2)
+        await channel.send(embed2)
 
     @commands.Cog.listener()
     async def on_guild_channel_delete(self, vc):
