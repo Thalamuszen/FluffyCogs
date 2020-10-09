@@ -253,7 +253,7 @@ class InVoice(commands.Cog):
         self.channel_cache[vc.id]["channel"] = text.id
         channel = guild.get_channel(int(text.id))
         await channel.send(
-                "TextID: {textid} \n Henlo <@&751799486514462750>".format(textid=text.id)
+                "Henlo <@&751799486514462750>,\nRun `!command` blah"
             )
 
     @commands.Cog.listener()
