@@ -216,7 +216,7 @@ class InVoice(commands.Cog):
             )
 
     @commands.Cog.listener()
-    async def on_guild_channel_create(self, vc):
+    async def on_guild_channel_create(self, ctx, vc):
         if not isinstance(vc, discord.VoiceChannel):
             return
         guild = vc.guild
