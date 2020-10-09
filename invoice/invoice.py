@@ -253,7 +253,7 @@ class InVoice(commands.Cog):
         self.channel_cache[vc.id]["channel"] = text.id
         channel = guild.get_channel(int(text.id))
         frens = discord.utils.get(guild.roles, id=751799486514462750)
-        embed1 = discord.Embed(title="__**Voice Chat Commands**__", description="Commands blah blah blah\n\n**Zen Chat Bot**\nZen Chat dynamically renames the current voice channel according to the game you are playing e.g."「Overwatch」" and will rename itself if you start playing a different game. (Voice channel name updates occur up to every 5 minutes).", color=0x4FE0E0)
+        embed1 = discord.Embed(title="__**Voice Chat Commands**__", description="Commands blah blah blah\n\n**Zen Chat Bot**\nZen Chat dynamically renames the current voice channel according to the game you are playing e.g."Overwatch" and will rename itself if you start playing a different game. (Voice channel name updates occur up to every 5 minutes).", color=0x4FE0E0)
         embed1.set_thumbnail(url="https://cdn.discordapp.com/avatars/751844552670969866/9f035363fa69e094c61c9a33e24d4382.png?size=1024")
         embed1.set_author(name="Elune", icon_url="https://cdn.discordapp.com/avatars/751844552670969866/9f035363fa69e094c61c9a33e24d4382.png")
         embed1.add_field(name="`zc name`", value="Directly change the name of your voice channel. Only the channel creator can do this. Can take up to 10 minutes to update.", inline=True)
