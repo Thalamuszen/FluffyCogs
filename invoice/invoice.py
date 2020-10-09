@@ -251,7 +251,7 @@ class InVoice(commands.Cog):
         )
         await self.config.channel(vc).channel.set(text.id)
         self.channel_cache[vc.id]["channel"] = text.id
-        channel = text.id
+        channel guild.get_channel(int(text.id))
         await channel.send(
                 "TextID: {textid}".format(textid=text.id)
             )
