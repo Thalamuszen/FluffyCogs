@@ -251,7 +251,7 @@ class InVoice(commands.Cog):
         )
         await self.config.channel(vc).channel.set(text.id)
         self.channel_cache[vc.id]["channel"] = text.id
-        channel = client.get_channel(vc.id)
+        channel = guild.get_channel(settings["channel"])
         await channel.send('hello')
 
     @commands.Cog.listener()
