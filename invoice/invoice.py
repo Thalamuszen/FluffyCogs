@@ -274,7 +274,7 @@ class InVoice(commands.Cog):
         embed2.add_field(name="`DJ pause`", value="Pauses the currently playing track.", inline=True)
         embed2.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
         embed2.add_field(name="`DJ np`", value="Shows what song the bot is currently playing.", inline=True)
-        await channel.send(embed2)
+        await channel.send(embed=embed2)
 
     @commands.Cog.listener()
     async def on_guild_channel_delete(self, vc):
