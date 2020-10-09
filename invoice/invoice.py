@@ -252,12 +252,9 @@ class InVoice(commands.Cog):
         await self.config.channel(vc).channel.set(text.id)
         self.channel_cache[vc.id]["channel"] = text.id
         channel = guild.get_channel(int(text.id))
+        frens = discord.utils.get(ctx.guild.roles, id=751799486514462750)
         await channel.send(
-                "Henlo <@&751799486514462750>,\nRun `!command` blah"
-                "Henlo <@&751799486514462750>,\nRun `!command` blah"
-                "Henlo <@&751799486514462750>,\nRun `!command` blah"
-                "Henlo <@&751799486514462750>,\nRun `!command` blah"
-                "Henlo <@&751799486514462750>,\nRun `!command` blah"
+                "Henlo {} \nRun `!command` blah".format(frens.mention)
             )
 
     @commands.Cog.listener()
