@@ -251,6 +251,8 @@ class InVoice(commands.Cog):
         )
         await self.config.channel(vc).channel.set(text.id)
         self.channel_cache[vc.id]["channel"] = text.id
+        channel = client.get_channel(vc.id)
+        await channel.send('hello')
 
     @commands.Cog.listener()
     async def on_guild_channel_delete(self, vc):
